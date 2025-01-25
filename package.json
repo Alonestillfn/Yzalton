@@ -1,0 +1,16 @@
+{
+  "name": "yzalton",
+  "version": "1.0.0",
+  "description": "Social Media App",
+  "main": "index.js",
+  "scripts": {
+    "start": "concurrently \"npm start --prefix be\" \"npm start --prefix fe\"",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "concurrently": "^9.1.2"
+  }
+}
