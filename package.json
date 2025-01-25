@@ -4,7 +4,7 @@
   "description": "Social Media App",
   "main": "index.js",
   "scripts": {
-    "start": "concurrently \"npm start --prefix be\" \"npm start --prefix fe\"",
+    "start": "concurrently \"npm start --prefix be\" \"npm run dev --prefix fe\"",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
