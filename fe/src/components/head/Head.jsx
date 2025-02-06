@@ -1,32 +1,44 @@
+import { Link } from 'react-router-dom'
+
 import Girl from '../../assets/img/aGirl.png'
 
 function Head(){
     return (
-        <div className="max-h-[8vh] bg-[#252728] grid grid-cols-4 px-2">
+        <div className="grid grid-cols-[32%_36%_32%] fixed left-0 right-0 z-10 h-[8%] bg-[#252728] px-2 border-b border-[#3a3c3d]">
             <div className="flex ml-2 py-2">
                 <div className="bg-amber-600 min-w-10 text-center rounded-4xl text-4xl mr-2">Y</div>
-                <div className="flex items-center bg-[#333334] text-gray-300 rounded">
+                <div className="flex grow  max-w-[60%] items-center bg-[#333334] text-gray-300 rounded">
                     <i className="fa-solid fa-magnifying-glass p-2"></i>
-                    <input className=" max-h-[10vh] h-9 w-50 focus:text-white outline-none" type="text" placeholder="Search on Yzalton"/>
+                    <input className=" max-h-[10vh] h-9 w-full focus:text-white outline-none" type="text" placeholder="Search on Yzalton"/>
                 </div>
             </div>
 
-            <div className="col-span-2 flex items-center text-2xl justify-around">
-                <div className="hover:cursor-pointer hover:bg-[#333334] py-2 px-15 rounded-lg">
-                    <i className="fa-solid fa-house"></i>
-                </div>
-                <div className="hover:cursor-pointer hover:bg-[#333334] py-2 px-15 rounded-lg">
-                    <i className="fa-solid fa-user-group"></i>
-                </div>
-                <div className="hover:cursor-pointer hover:bg-[#333334] py-2 px-15 rounded-lg">
-                    <i className="fa-solid fa-tv"></i>
-                </div>
-                <div className="hover:cursor-pointer hover:bg-[#333334] py-2 px-15 rounded-lg">
-                    <i className="fa-solid fa-store"></i>
-                </div>
-                <div className="hover:cursor-pointer hover:bg-[#333334] py-2 px-15 rounded-lg">
-                    <i className="fa-solid fa-users"></i>
-                </div>
+            <div className="flex items-center text-2xl justify-around">
+                <Link to='/'>
+                    <div className="hover:cursor-pointer hover:bg-[#333334] py-2 px-9 rounded-lg">
+                        <i className="fa-solid fa-house"></i>
+                    </div>
+                </Link>
+                <Link to='/friend'>
+                    <div className="hover:cursor-pointer hover:bg-[#333334] py-2 px-9 rounded-lg">
+                        <i className="fa-solid fa-user-group"></i>
+                    </div>
+                </Link>
+                <Link to='/video'>
+                    <div className="hover:cursor-pointer hover:bg-[#333334] py-2 px-9 rounded-lg">
+                        <i className="fa-solid fa-tv"></i>
+                    </div>
+                </Link>
+                <Link to='/marketplace'>
+                    <div className="hover:cursor-pointer hover:bg-[#333334] py-2 px-9 rounded-lg">
+                        <i className="fa-solid fa-store"></i>
+                    </div>
+                </Link>
+                <Link to='/group'>
+                    <div className="hover:cursor-pointer hover:bg-[#333334] py-2 px-9 rounded-lg">
+                        <i className="fa-solid fa-users"></i>
+                    </div>
+                </Link>
             </div>
 
             <div className='flex items-center justify-end text-2xl '>

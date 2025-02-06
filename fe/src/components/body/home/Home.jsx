@@ -1,14 +1,19 @@
 import HomeLeft from "./HomeLeft"
+import HomeMid from "./HomeMid"
+import HomeRight from "./HomeRight"
+
 function Home(){
     return (
-        <div className="grid grid-cols-4 text-[#e2e5e9]">
+        <div className="grid grid-cols-[32%_36%_32%]">
+            <div className="">
+                <HomeLeft></HomeLeft>
 
-            <HomeLeft></HomeLeft>
-            <div className="col-span-2">
-                b
             </div>
-            <div>
-                a
+            <div className="">
+                <HomeMid></HomeMid>
+            </div>
+            <div className="">
+                <HomeRight></HomeRight>
             </div>
         </div>
     )
