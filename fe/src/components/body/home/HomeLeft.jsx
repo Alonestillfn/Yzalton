@@ -1,7 +1,7 @@
 import Pic from '../../../assets/img/aGirl.png'
 import Minji from '../../../assets/img/KimMinji.jpg'
 
-function HomeLeft(){
+function HomeLeft({ nameUser }){
     const homeFunction = ["Find friends", "Saved", "Memory", "Group", "Video", "Marketplace", "Feed table"]
     const homeFunctionIcon = [
         "fa-solid fa-user-group",
@@ -13,6 +13,7 @@ function HomeLeft(){
         "fa-solid fa-table-columns",
     ]
     const shortcutName = ["Coding group", "IT group", "Music group", "Anime group"]
+    
 
     return (
         <div className='fixed top-[8%] left-0 right-[77%]'>
@@ -22,7 +23,7 @@ function HomeLeft(){
                         <img src={Pic} alt="image" className='w-10 h-10 rounded-3xl'/>
                     </div>
                     <div className='text-[1.1rem]'>
-                        Văn Tài
+                        {`${nameUser}`}
                     </div>
                 </div>
                 {
@@ -55,7 +56,7 @@ function HomeLeft(){
                     {
                         shortcutName.map((shortcutNameItem, index) => (
                             <div key={index} className='flex items-center mt-1 p-1 hover:bg-orange-400 hover:cursor-pointer rounded-lg'>
-                                <img src={Minji} alt="image" className='w-10 h-10 bg-cover rounded-lg mr-2'/>
+                                <img src={Minji} alt="image" className='w-10 h-10 object-cover rounded-lg mr-2'/>
                                 <h3>{shortcutNameItem}</h3>
                             </div>
                         ))

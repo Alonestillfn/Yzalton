@@ -41,7 +41,7 @@ function MarketplaceLeft(){
 
     return (
         <div className="bg-[#252728]">
-            <div className="fixed mt-[4%] max-h-[92vh] pb-10 overflow-auto scrollbar-hide bg-[#252728] top-0 left-0 right-[77%] pl-4 pr-2">
+            <div className="fixed mt-[4.5%] max-h-[92vh] pb-10 overflow-auto scrollbar-hide bg-[#252728] top-0 left-0 right-[77%] pl-4 pr-2">
                 <div className="flex items-center justify-between text-2xl py-1">
                     <div className="font-bold">Marketplace</div>
                     <div className="px-2 rounded-full bg-[#333334] hover:opacity-80 hover:cursor-pointer">

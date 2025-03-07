@@ -10,7 +10,7 @@ function Body(){
     return (
         <div className="bg-[#1c1c1d] h-[92%] pt-[4%]">
             <Routes>
-                <Route path="/" element={<Home></Home>}></Route>
+                <Route path="/home" element={<Home></Home>}></Route>
                 <Route path="/friend" element={<Friend></Friend>}></Route>
                 <Route path="/video" element={<Video></Video>}></Route>
                 <Route path="/marketplace" element={<Marketplace></Marketplace>}></Route>

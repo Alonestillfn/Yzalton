@@ -88,7 +88,7 @@ function VideoRight(){
                         <br />
                         Follow me for more music
                     </p>
-                    <iframe className='w-full h-[500px]' src="https://www.youtube.com/embed/t5CWCp9hQJE" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    <video className='w-full h-[500px] bg-[#333334] hover:cursor-pointer' src={Balo} controls autoPlay loop muted></video>
                 </div>
                 <div className='flex justify-between mb-1 p-2 mx-3'>
                     <div className='flex justify-around text-lg text-[#b0b3b8]'>
