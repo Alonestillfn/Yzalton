@@ -1,7 +1,7 @@
 import { Routes, Route, Navigate, useNavigate } from 'react-router'
 
 import './App.css'
-import Login from './components/login'
+import Login from './components/login/Login'
 import CreateAcc from './components/login/CreateAcc'
 import Main from './components/main/Main'
 import { useEffect } from 'react'
